@@ -1,0 +1,58 @@
+<ion-content [fullscreen]="true">
+  <div class="flex-center-card">
+    <ion-card class="card-principal">
+      <ion-card-header>
+        <ion-button fill="clear" [routerLink]="['/home']" class="btn-back">
+          <ion-icon name="close" color="dark" size="large"></ion-icon>
+        </ion-button>
+        <ion-card-title>Registrarse</ion-card-title>
+        <ion-card-subtitle>RegistrApp</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-input label="Nombre" 
+                    type="text"
+                    labelPlacement="floating"
+                    placeholder="Ingrese su Nombre"
+                    autofocus="true">
+          </ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-input label="Email" 
+                    type="email"
+                    labelPlacement="floating"
+                    placeholder="Ingrese su Correo">
+          </ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-input label="Telefono" 
+                    type="tel"
+                    labelPlacement="floating"
+                    placeholder="Ingrese su Número de Telefono">
+          </ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-input label="Contraseña"
+                    type="password"
+                    labelPlacement="floating"
+                    placeholder="Ingrese su Contraseña">
+          </ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-input label="Confimar Contraseña"
+                    type="password"
+                    labelPlacement="floating"
+                    placeholder="ingrese de nuevo su contraseña">
+          </ion-input>
+        </ion-item>
+        <br>
+        <ion-button expand="full" shape="round">Registrarse</ion-button>
+      </ion-card-content>
+      
+    </ion-card>
+  </div>
+</ion-content>
