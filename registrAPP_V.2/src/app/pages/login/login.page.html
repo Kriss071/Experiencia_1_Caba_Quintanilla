@@ -13,7 +13,8 @@
         <ion-item>
           <ion-input label="Usuario" 
                     placeholder="Ingresar Usuario" 
-                    labelPlacement="floating">
+                    labelPlacement="floating"
+                    type="text" [(ngModel)]="username">
           </ion-input>
         </ion-item>
         <br>
@@ -21,13 +22,15 @@
           <ion-input label="Contraseña" 
                     placeholder="Ingresar Contraseña" 
                     labelPlacement="floating"
-                    type="password">
+                    type="password"
+                    [(ngModel)]="password"
+                    >
           </ion-input>
         </ion-item>
         <ion-button fill="clear" color="light" [routerLink]="['/forgot-password']">Olvide Contraseña</ion-button>
         <div class="contenedor-card-btn">
           <ion-button fill="outline" [routerLink]="['/register']">Registrarse</ion-button>
-          <ion-button [routerLink]="['/inicio']">Iniciar Sesión</ion-button>
+          <ion-button (click)="autorizar()">Iniciar Sesión</ion-button>
         </div>
       </ion-card-content>
     </ion-card>
