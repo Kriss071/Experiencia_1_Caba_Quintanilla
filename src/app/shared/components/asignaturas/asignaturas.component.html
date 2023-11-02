@@ -1,0 +1,13 @@
+<div *ngFor="let asignatura of asignaturas">
+    <ion-card>
+        <ion-card-header>
+            <ion-icon name="{{asignatura.icon}}"></ion-icon>
+            <ion-card-title>{{asignatura.nombre}}</ion-card-title>
+            <ion-card-subtitle>Codigo: {{asignatura.codigo}}</ion-card-subtitle>
+            <ion-button  *ngIf="user().role == 'Profesor'" (click)="navigateToPage()" fill="clear" shape="round">
+                Generar Qr
+            </ion-button> 
+        </ion-card-header>
+    </ion-card>
+    
+</div>
